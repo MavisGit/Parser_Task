@@ -127,7 +127,7 @@ def get_info(url_page, cookies, headers, name_group):
             with open("data/csv/all_item.csv", "a", encoding="utf-8") as file:
                 writer = csv.writer(file)
                 writer.writerow([
-                        str(name_group).strip(),
+                        name_group.strip(),
                         name_item.strip(),
                         img_url,
                         artikul_item.strip(),
